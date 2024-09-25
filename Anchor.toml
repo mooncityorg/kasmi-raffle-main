@@ -1,0 +1,14 @@
+[features]
+seeds = false
+[programs.devnet]
+raffle = "3qJm618bPvosqjFZqMjrUYgVXNKGDPBmTVRMqHar92DK"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/ubuntu/fury/deploy-keypair.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
